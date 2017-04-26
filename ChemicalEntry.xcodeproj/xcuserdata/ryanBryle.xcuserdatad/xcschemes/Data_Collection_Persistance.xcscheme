@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "FCFBED471EB002370066E623"
-               BuildableName = "Data_Collection_Persistance.app"
-               BlueprintName = "Data_Collection_Persistance"
-               ReferencedContainer = "container:Data_Collection_Persistance.xcodeproj">
+               BuildableName = "ChemicalEntry.app"
+               BlueprintName = "ChemicalEntry"
+               ReferencedContainer = "container:ChemicalEntry.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "FCFBED471EB002370066E623"
-            BuildableName = "Data_Collection_Persistance.app"
-            BlueprintName = "Data_Collection_Persistance"
-            ReferencedContainer = "container:Data_Collection_Persistance.xcodeproj">
+            BuildableName = "ChemicalEntry.app"
+            BlueprintName = "ChemicalEntry"
+            ReferencedContainer = "container:ChemicalEntry.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -56,9 +56,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "FCFBED471EB002370066E623"
-            BuildableName = "Data_Collection_Persistance.app"
-            BlueprintName = "Data_Collection_Persistance"
-            ReferencedContainer = "container:Data_Collection_Persistance.xcodeproj">
+            BuildableName = "ChemicalEntry.app"
+            BlueprintName = "ChemicalEntry"
+            ReferencedContainer = "container:ChemicalEntry.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -75,9 +75,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "FCFBED471EB002370066E623"
-            BuildableName = "Data_Collection_Persistance.app"
-            BlueprintName = "Data_Collection_Persistance"
-            ReferencedContainer = "container:Data_Collection_Persistance.xcodeproj">
+            BuildableName = "ChemicalEntry.app"
+            BlueprintName = "ChemicalEntry"
+            ReferencedContainer = "container:ChemicalEntry.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

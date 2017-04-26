@@ -12,16 +12,22 @@
 		FCFBED511EB002370066E623 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FCFBED4F1EB002370066E623 /* Main.storyboard */; };
 		FCFBED531EB002370066E623 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FCFBED521EB002370066E623 /* Assets.xcassets */; };
 		FCFBED561EB002370066E623 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FCFBED541EB002370066E623 /* LaunchScreen.storyboard */; };
+		FCFBED5E1EB002550066E623 /* amiga4ever pro.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FCFBED5D1EB002550066E623 /* amiga4ever pro.ttf */; };
+		FCFBED601EB005150066E623 /* ChemicalItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCFBED5F1EB005150066E623 /* ChemicalItem.swift */; };
+		FCFBED621EB00A5C0066E623 /* DisplayChemicalsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCFBED611EB00A5C0066E623 /* DisplayChemicalsVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		FCFBED481EB002370066E623 /* Data_Collection_Persistance.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Data_Collection_Persistance.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FCFBED481EB002370066E623 /* ChemicalEntry.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChemicalEntry.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FCFBED4B1EB002370066E623 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FCFBED4D1EB002370066E623 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		FCFBED501EB002370066E623 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FCFBED521EB002370066E623 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FCFBED551EB002370066E623 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FCFBED571EB002370066E623 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FCFBED5D1EB002550066E623 /* amiga4ever pro.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "amiga4ever pro.ttf"; sourceTree = "<group>"; };
+		FCFBED5F1EB005150066E623 /* ChemicalItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChemicalItem.swift; sourceTree = "<group>"; };
+		FCFBED611EB00A5C0066E623 /* DisplayChemicalsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DisplayChemicalsVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,7 +52,7 @@
 		FCFBED491EB002370066E623 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				FCFBED481EB002370066E623 /* Data_Collection_Persistance.app */,
+				FCFBED481EB002370066E623 /* ChemicalEntry.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -54,12 +60,15 @@
 		FCFBED4A1EB002370066E623 /* Data_Collection_Persistance */ = {
 			isa = PBXGroup;
 			children = (
+				FCFBED5D1EB002550066E623 /* amiga4ever pro.ttf */,
 				FCFBED4B1EB002370066E623 /* AppDelegate.swift */,
 				FCFBED4D1EB002370066E623 /* ViewController.swift */,
 				FCFBED4F1EB002370066E623 /* Main.storyboard */,
 				FCFBED521EB002370066E623 /* Assets.xcassets */,
 				FCFBED541EB002370066E623 /* LaunchScreen.storyboard */,
 				FCFBED571EB002370066E623 /* Info.plist */,
+				FCFBED5F1EB005150066E623 /* ChemicalItem.swift */,
+				FCFBED611EB00A5C0066E623 /* DisplayChemicalsVC.swift */,
 			);
 			path = Data_Collection_Persistance;
 			sourceTree = "<group>";
@@ -67,9 +76,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		FCFBED471EB002370066E623 /* Data_Collection_Persistance */ = {
+		FCFBED471EB002370066E623 /* ChemicalEntry */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = FCFBED5A1EB002370066E623 /* Build configuration list for PBXNativeTarget "Data_Collection_Persistance" */;
+			buildConfigurationList = FCFBED5A1EB002370066E623 /* Build configuration list for PBXNativeTarget "ChemicalEntry" */;
 			buildPhases = (
 				FCFBED441EB002370066E623 /* Sources */,
 				FCFBED451EB002370066E623 /* Frameworks */,
@@ -79,9 +88,9 @@
 			);
 			dependencies = (
 			);
-			name = Data_Collection_Persistance;
+			name = ChemicalEntry;
 			productName = Data_Collection_Persistance;
-			productReference = FCFBED481EB002370066E623 /* Data_Collection_Persistance.app */;
+			productReference = FCFBED481EB002370066E623 /* ChemicalEntry.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -101,7 +110,7 @@
 					};
 				};
 			};
-			buildConfigurationList = FCFBED431EB002370066E623 /* Build configuration list for PBXProject "Data_Collection_Persistance" */;
+			buildConfigurationList = FCFBED431EB002370066E623 /* Build configuration list for PBXProject "ChemicalEntry" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -114,7 +123,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				FCFBED471EB002370066E623 /* Data_Collection_Persistance */,
+				FCFBED471EB002370066E623 /* ChemicalEntry */,
 			);
 		};
 /* End PBXProject section */
@@ -124,6 +133,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FCFBED5E1EB002550066E623 /* amiga4ever pro.ttf in Resources */,
 				FCFBED561EB002370066E623 /* LaunchScreen.storyboard in Resources */,
 				FCFBED531EB002370066E623 /* Assets.xcassets in Resources */,
 				FCFBED511EB002370066E623 /* Main.storyboard in Resources */,
@@ -138,7 +148,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				FCFBED4E1EB002370066E623 /* ViewController.swift in Sources */,
+				FCFBED601EB005150066E623 /* ChemicalItem.swift in Sources */,
 				FCFBED4C1EB002370066E623 /* AppDelegate.swift in Sources */,
+				FCFBED621EB00A5C0066E623 /* DisplayChemicalsVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,7 +298,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		FCFBED431EB002370066E623 /* Build configuration list for PBXProject "Data_Collection_Persistance" */ = {
+		FCFBED431EB002370066E623 /* Build configuration list for PBXProject "ChemicalEntry" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				FCFBED581EB002370066E623 /* Debug */,
@@ -295,7 +307,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		FCFBED5A1EB002370066E623 /* Build configuration list for PBXNativeTarget "Data_Collection_Persistance" */ = {
+		FCFBED5A1EB002370066E623 /* Build configuration list for PBXNativeTarget "ChemicalEntry" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				FCFBED5B1EB002370066E623 /* Debug */,
