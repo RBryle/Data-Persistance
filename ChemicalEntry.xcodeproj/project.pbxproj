@@ -60,15 +60,15 @@
 		FCFBED4A1EB002370066E623 /* Data_Collection_Persistance */ = {
 			isa = PBXGroup;
 			children = (
-				FCFBED5D1EB002550066E623 /* amiga4ever pro.ttf */,
-				FCFBED4B1EB002370066E623 /* AppDelegate.swift */,
-				FCFBED4D1EB002370066E623 /* ViewController.swift */,
-				FCFBED4F1EB002370066E623 /* Main.storyboard */,
-				FCFBED521EB002370066E623 /* Assets.xcassets */,
-				FCFBED541EB002370066E623 /* LaunchScreen.storyboard */,
 				FCFBED571EB002370066E623 /* Info.plist */,
+				FCFBED4B1EB002370066E623 /* AppDelegate.swift */,
 				FCFBED5F1EB005150066E623 /* ChemicalItem.swift */,
 				FCFBED611EB00A5C0066E623 /* DisplayChemicalsVC.swift */,
+				FCFBED4D1EB002370066E623 /* ViewController.swift */,
+				FCFBED5D1EB002550066E623 /* amiga4ever pro.ttf */,
+				FCFBED521EB002370066E623 /* Assets.xcassets */,
+				FCFBED541EB002370066E623 /* LaunchScreen.storyboard */,
+				FCFBED4F1EB002370066E623 /* Main.storyboard */,
 			);
 			path = Data_Collection_Persistance;
 			sourceTree = "<group>";
@@ -314,6 +314,7 @@
 				FCFBED5C1EB002370066E623 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

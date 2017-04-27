@@ -35,8 +35,7 @@ class DisplayChemicalsVC: UITableViewController {
 
     // MARK: - Table view data source
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
-        return chemicals!.count
+        return chemicals!.count + 1
     }
 
     
@@ -47,10 +46,15 @@ class DisplayChemicalsVC: UITableViewController {
         let companyLabel = cell.viewWithTag(101) as! UILabel
         let lotNum = cell.viewWithTag(102) as! UILabel
         
+        if indexPath.row != chemicals.count {
         chemicalLabel.text = configureText(chemicalItem: chemicals[indexPath.row]).0
         companyLabel.text = configureText(chemicalItem: chemicals[indexPath.row]).1
         lotNum.text = configureText(chemicalItem: chemicals[indexPath.row]).2
-        
+        } else {
+            companyLabel.text = "EXIT"
+            chemicalLabel.text = ""
+            lotNum.text = ""
+        }
         return cell
     }
     
@@ -59,6 +63,12 @@ class DisplayChemicalsVC: UITableViewController {
         let company = chemicalItem.companyName
         let lotNum = chemicalItem.lotNumber
         return (chemical, company, lotNum)
+    }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if indexPath.row == chemicals.count {
+            dismiss(animated: true, completion: nil)
+        }
     }
  
 

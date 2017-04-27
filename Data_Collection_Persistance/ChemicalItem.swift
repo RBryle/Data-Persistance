@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ChemicalItem: NSObject {
+class ChemicalItem: NSObject, NSCoding {
     
     var chemicalName: String = ""
     var companyName: String = ""
@@ -16,6 +16,19 @@ class ChemicalItem: NSObject {
     
     override init() {
         super.init()
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        chemicalName = aDecoder.decodeObject(forKey: "ChemicalName") as! String
+        companyName = aDecoder.decodeObject(forKey: "CompanyName") as! String
+        lotNumber = aDecoder.decodeObject(forKey: "LotNumber") as! String
+        super.init()
+    }
+    
+    func encode(with aCoder: NSCoder) {
+        aCoder.encode(chemicalName, forKey: "ChemicalName")
+        aCoder.encode(companyName, forKey: "CompanyName")
+        aCoder.encode(lotNumber, forKey: "LotNumber")
     }
 
     
