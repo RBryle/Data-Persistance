@@ -19,6 +19,7 @@ class ViewController: UIViewController {
     required init?(coder aDecoder: NSCoder) {
         chemicalItems = []
         super.init(coder: aDecoder)
+        loadChemicalListItems()
         print("Documents folder is \(documentsDir())")
         print("Data file path is \(dataFilePath())")
     }
