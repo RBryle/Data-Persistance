@@ -6,16 +6,19 @@
 //  Copyright © 2017 Ryan Bryle. All rights reserved.
 //
 
+protocol SaveLoad {
+    func save(vc: DisplayChemicalsVC, saveObject: [ChemicalItem])
+}
+
 import UIKit
+
 class DisplayChemicalsVC: UITableViewController {
     
     var chemicals: [ChemicalItem]!
+    var delegate: SaveLoad?
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        
-        
-        
     }
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -86,6 +89,7 @@ class DisplayChemicalsVC: UITableViewController {
             // Delete the row from the data source
             chemicals.remove(at: indexPath.row)
             tableView.deleteRows(at: [indexPath], with: .fade)
+            delegate?.save(vc: self, saveObject: chemicals)
             
         } else if editingStyle == .insert {
             // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view

@@ -30,6 +30,35 @@ class ChemicalItem: NSObject, NSCoding {
         aCoder.encode(companyName, forKey: "CompanyName")
         aCoder.encode(lotNumber, forKey: "LotNumber")
     }
+    
+    /*
+     I want to add the save/load funtionality here.
+     Here are the methods' implementation...
+     
+     func saveChemicalListItems() {
+     let data = NSMutableData()
+     let archiver = NSKeyedArchiver(forWritingWith: data)
+     archiver.encode(chemicalItems, forKey: "ChemicalItems")
+     archiver.finishEncoding()
+     data.write(to: dataFilePath(), atomically: true)
+     }
+     
+     func loadChemicalListItems() {
+     let path = dataFilePath()
+     if let data = try? Data(contentsOf: path) {
+     let unarchiver = NSKeyedUnarchiver(forReadingWith: data)
+     chemicalItems = unarchiver.decodeObject(forKey: "ChemicalItems") as! [ChemicalItem]
+     unarchiver.finishDecoding()
+     }
+     }
+     
+     -notice: both methods the object 'chemicalList' are used to encode
+     
+     
+     
+     */
+    
+    
 
     
 }

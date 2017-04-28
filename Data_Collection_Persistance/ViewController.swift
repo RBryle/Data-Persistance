@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, SaveLoad {
     
     var chemicalItems: [ChemicalItem]
     
@@ -69,6 +69,12 @@ class ViewController: UIViewController {
         }
     }
     
+    func save(vc: DisplayChemicalsVC, saveObject: [ChemicalItem]) {
+        chemicalItems = saveObject
+        saveChemicalListItems()
+    }
+    
+    
     func reportChemicalArrayData() {
         print("NUmber of elements in our chemical list: \(chemicalItems.count)")
     }
@@ -92,6 +98,7 @@ class ViewController: UIViewController {
         if segue.identifier == "ViewAll" {
             let displayVC = segue.destination as! DisplayChemicalsVC
             displayVC.chemicals = self.chemicalItems
+            displayVC.delegate = self
         }
     }
     
